@@ -6,6 +6,10 @@
   src: url('fonts/aoboshi-one-v13-latin-regular.woff2') format('woff2');
 }
 
+h1 {
+  font-family: 'Aoboshi One';
+}
+
 body {
   font-family: 'Aoboshi One', sans-serif;
   margin: 0;
