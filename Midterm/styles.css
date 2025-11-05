@@ -10,10 +10,72 @@ body {
   font-family: 'Aoboshi One', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-   text-align: center;
+  background-color: #f8f9fa;
+  text-align: center;
 }
+
+/* Header */
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* Flexbox Navigation Container */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;              /* allows wrapping on smaller screens */
+  justify-content: center;      /* centers horizontally */
+  align-items: center;
+  gap: 1.5rem;                  /* space between boxes */
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 900px;             /* limits total width */
+}
+
+/* Individual Nav Boxes */
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;    /* default blue box */
+  border: 3px solid #0056b3;
+  border-radius: 10px;
+  width: 160px;
+  height: 100px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Different Colors for Variety (Optional) */
+.nav-item:nth-child(1) { background-color: #004aad; border-color: #003580; }
+.nav-item:nth-child(2) { background-color: #28a745; border-color: #1e7e34; }
+.nav-item:nth-child(3) { background-color: #ffc107; border-color: #cc9a06; color: #333; }
+.nav-item:nth-child(4) { background-color: #17a2b8; border-color: #117a8b; }
+.nav-item:nth-child(5) { background-color: #dc3545; border-color: #a71d2a; }
+
+/* Hover and Active Effects */
+.nav-item:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+.nav-item.active {
+  outline: 4px solid #000;
+  transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #333;
+}
+
 /* Header */
 header {
   background-color: #004aad;
