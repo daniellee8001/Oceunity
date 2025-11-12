@@ -268,12 +268,12 @@ ul.image-list .li-text::before {
   left: -50px;
   transform: translateY(-50%);
   z-index: 10;
-  animation: slideIn 2s forwards; 
+  animation: slideIn 0.5s forwards; 
 }
 
 .nav-animation img {
-  width: 32px;   
-  height: 32px;
+  width: 40px;   
+  height: 40px;
 }
 
 
