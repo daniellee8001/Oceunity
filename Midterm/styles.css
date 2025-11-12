@@ -113,26 +113,23 @@ li {
   margin-bottom: 0.6em;
 }
 
-/* Normal lists (not .image-list) */
-ul:not(.image-list) {
+ul.custom-bullet {
   list-style: none; /* remove default bullets */
   padding-left: 45px; /* space for bullet */
-  margin-bottom: 1em;
 }
 
-ul:not(.image-list) li {
+ul.custom-bullet li {
   position: relative;
-  margin-bottom: 0.8em; /* spacing between items */
-  line-height: 1.6; /* match paragraph line height */
+  line-height: 1.6; /* match paragraph text */
+  margin-bottom: 0.8em;
 }
 
-ul:not(.image-list) li::before {
+ul.custom-bullet li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0; /* start at top of li */
-  transform: translateY(0.15em); /* adjust vertical alignment */
-  width: 24px; /* smaller than image-list bullet */
+  top: 0.25em; /* adjust this slightly to align with first line */
+  width: 24px;
   height: 24px;
   background-image: url('images/HydroSigil.webp');
   background-size: contain;
