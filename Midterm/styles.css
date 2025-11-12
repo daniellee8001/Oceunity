@@ -113,6 +113,18 @@ li {
   margin-bottom: 0.6em;
 }
 
+ul.image-list li {
+  list-style-position: inside;
+  margin-bottom: 30px;
+}
+
+ul.image-list .li-text {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+
 .hero {
   margin-top: 0;
   height: 400px;
