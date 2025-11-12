@@ -66,6 +66,15 @@ main {
   text-align: justify;
 }
 
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
 footer {
   background-color: #333;
   color: white;
