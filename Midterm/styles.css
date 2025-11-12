@@ -78,15 +78,31 @@ p {
   transition: height 0.2s;
 }
 
-/* Scroll shrinking effect */
 body {
   scroll-behavior: smooth;
 }
 
-window.addEventListener('scroll', function() {
-  const hero = document.querySelector('.hero');
-  const scrollY = window.scrollY;
-  const newHeight = Math.max(150, 400 - scrollY); // minimum height 150px
-  hero.style.height = newHeight + 'px';
-});
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url('images/pattern.png'); /* your pattern image */
+  background-repeat: repeat; /* repeat the pattern across the page */
+  background-size: contain; /* or 'cover' if you want a large stretched pattern */
+  background-position: center top;
+}
 
+/* Keep the main box with white background on top */
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.95); /* slightly transparent white looks nicer */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
