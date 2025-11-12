@@ -81,6 +81,21 @@ p {
   margin-bottom: 1.2em;
 }
 
+/* Unordered List Styling to match paragraphs */
+ul {
+  font-family: 'Cormorant Garamond', serif;
+  text-align: justify;
+  padding-left: 1.2em;
+  margin: 1em 0;
+  list-style-position: inside;
+  width: 100%;
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 0.6em;
+}
+
 .hero {
   margin-top: 0;
   height: 400px;
