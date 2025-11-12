@@ -261,3 +261,28 @@ ul.image-list .li-text::before {
   background-repeat: no-repeat;
   transition: height 0.2s;
 }
+
+.nav-animation {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  z-index: 10;
+  animation: slideIn 2s forwards; 
+}
+
+.nav-animation img {
+  width: 32px;   
+  height: 32px;
+}
+
+
+@keyframes slideIn {
+  0% {
+    left: -50px; 
+  }
+  100% {
+    left: 10px; 
+  }
+}
+
