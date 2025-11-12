@@ -11,7 +11,7 @@
   font-family: 'Cormorant Garamond';
   font-style: italic;
   font-weight: 500;
-  src: url('../fonts/cormorant-garamond-v21-latin-500italic.woff2') format('woff2'); 
+  src: url('fonts/cormorant-garamond-v21-latin-500italic.woff2') format('woff2'); 
 }
 
 /* General Page Styling */
@@ -62,15 +62,29 @@ h1, h2 {
 
 /* Paragraph centered */
 p {
-  /* Paragraphs centered on page, text justified */
-p {
   font-family: 'Cormorant Garamond', serif;
-  text-align: justify;
-  max-width: 700px;
-  margin: 20px auto;
-  line-height: 1.6;
-  padding: 0 15px;
+  text-align: center;
 }
 
+.hero {
+  margin-top: 0;
+  height: 400px;
+  background-image: url('images/FontaineBackground.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: height 0.2s;
 }
+
+/* Scroll shrinking effect */
+body {
+  scroll-behavior: smooth;
+}
+
+window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero');
+  const scrollY = window.scrollY;
+  const newHeight = Math.max(150, 400 - scrollY); // minimum height 150px
+  hero.style.height = newHeight + 'px';
+});
 
