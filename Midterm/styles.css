@@ -268,7 +268,7 @@ ul.image-list .li-text::before {
   left: -50px;
   transform: translateY(-50%);
   z-index: 10;
-  animation: slideIn 0.5s forwards; 
+  animation: slideIn 3s forwards; 
 }
 
 .nav-animation img {
@@ -282,7 +282,7 @@ ul.image-list .li-text::before {
     left: -50px; 
   }
   100% {
-    left: 10px; 
+    left: 30px; 
   }
 }
 
