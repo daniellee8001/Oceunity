@@ -126,18 +126,20 @@ ul.image-list li {
   padding-left: 40px;
 }
 
-ul.image-list .li-text::before {
+ul.image-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.4em;
+  top: 0.6em;
   width: 32px;
   height: 32px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg');
+  background-image: url('images/HydroSigil.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 5;
 }
+
 
 ul.image-list .li-text {
   display: inline-block;
@@ -146,6 +148,7 @@ ul.image-list .li-text {
   text-align: justify;
   line-height: 1.6;
 }
+
 
 
 
