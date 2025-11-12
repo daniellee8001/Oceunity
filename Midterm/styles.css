@@ -128,13 +128,16 @@ ul.custom-bullet li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.25em; /* adjust this slightly to align with first line */
+  top: 0; /* start at top of li */
   width: 24px;
   height: 24px;
   background-image: url('images/HydroSigil.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  /* moves the bullet down slightly to align with first line of text */
+  transform: translateY(0.15em); 
 }
 
 
