@@ -141,7 +141,7 @@ ul.image-list .li-text::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.3em; /* adjust vertical alignment */
+  top: 0;
   width: 32px;
   height: 32px;
   background-image: url('images/HydroSigil.webp');
