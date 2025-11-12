@@ -86,7 +86,7 @@ footer {
   border-top: 1px solid #444;
 }
 /* Header left-aligned */
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Aoboshi One', sans-serif;
   text-align: left;
 }
