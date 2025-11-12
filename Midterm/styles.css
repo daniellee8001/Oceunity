@@ -86,9 +86,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  background-image: url('images/pattern.png'); /* your pattern image */
-  background-repeat: repeat; /* repeat the pattern across the page */
-  background-size: contain; /* or 'cover' if you want a large stretched pattern */
+  background-image: url('images/HydroBackground.jpg');
+  background-repeat: repeat;
+  background-size: contain;
   background-position: center top;
 }
 
