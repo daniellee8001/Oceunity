@@ -6,9 +6,16 @@
   src: url('fonts/aoboshi-one-v13-latin-regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/cormorant-garamond-v21-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* General Page Styling */
 body {
-  font-family: 'Aoboshi One', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -23,6 +30,7 @@ nav {
 }
 
 nav a {
+  font-family: 'Aoboshi One', sans-serif;
   text-decoration: none;
   color: white;
   background-color: #555;
@@ -48,11 +56,13 @@ main {
 
 /* Header left-aligned */
 h1, h2 {
+  font-family: 'Aoboshi One', sans-serif;
   text-align: left;
 }
 
 /* Paragraph centered */
 p {
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
 }
 
