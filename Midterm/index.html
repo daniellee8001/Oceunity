@@ -14,7 +14,9 @@
     <a href="contact.html">Contact</a>
     <a href="statement.html">Statement</a>
   </nav>
-
+  
+  <div class="hero"></div>
+  
   <main>
     <h1>Welcome to Fontaine</h1>
     <p>Across the great oceans of Teyvat, you see a great nation that stands high above the level of the open sea. Fontaine, the nation of hydro shines with dazzling elegance with its combination of futuristic and traditional architecture. In our world we excel in old magic and the ways of the agrarian societal composition. This land is the nation of the future, and it is haled for its artistic and technologically advanced industrial society, offering modern commodities for your stay. ruled by the Hydro Archon a devoted leader that strives to drive things in her nation with a fun theatrical display of  justice and order. 
@@ -23,5 +25,15 @@
       This land offers now just the highest pinnacles of technology of our world as of now, but also the central hotspot for theatre performances as we are the theatre capital of the Teyvat. We perform both our grand court sessions and theatrical performances amongst our borders and many stages. We draw wanderers and travelers across the land with our unique architecture of the old that blends with our modernized new approach with our affinity to water and the sea.
     </p>
   </main>
+  
+  <script>
+window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero');
+  const scrollY = window.scrollY;
+  const newHeight = Math.max(150, 400 - scrollY); // minimum height 150px
+  hero.style.height = newHeight + 'px';
+});
+</script>
+
 </body>
 </html>
