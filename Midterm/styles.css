@@ -6,123 +6,53 @@
   src: url('fonts/aoboshi-one-v13-latin-regular.woff2') format('woff2');
 }
 
-h1 {
-  font-family: 'Aoboshi One';
-}
-
+/* General Page Styling */
 body {
   font-family: 'Aoboshi One', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #555;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header left-aligned */
+h1, h2 {
+  text-align: left;
+}
+
+/* Paragraph centered */
+p {
   text-align: center;
 }
 
-/* Header */
-header {
-  background-color: #004aad;
-  color: white;
-  padding: 1.5rem 0;
-}
-
-/* Flexbox Navigation Container */
-.navbar {
-  display: flex;
-  flex-wrap: wrap;              /* allows wrapping on smaller screens */
-  justify-content: center;      /* centers horizontally */
-  align-items: center;
-  gap: 1.5rem;                  /* space between boxes */
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 900px;             /* limits total width */
-}
-
-/* Individual Nav Boxes */
-.nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background-color: #007bff;    /* default blue box */
-  border: 3px solid #0056b3;
-  border-radius: 10px;
-  width: 160px;
-  height: 100px;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-}
-
-/* Different Colors for Variety (Optional) */
-.nav-item:nth-child(1) { background-color: #004aad; border-color: #003580; }
-.nav-item:nth-child(2) { background-color: #28a745; border-color: #1e7e34; }
-.nav-item:nth-child(3) { background-color: #ffc107; border-color: #cc9a06; color: #333; }
-.nav-item:nth-child(4) { background-color: #17a2b8; border-color: #117a8b; }
-.nav-item:nth-child(5) { background-color: #dc3545; border-color: #a71d2a; }
-
-/* Hover and Active Effects */
-.nav-item:hover {
-  transform: scale(1.08);
-  filter: brightness(1.1);
-}
-
-.nav-item.active {
-  outline: 4px solid #000;
-  transform: scale(1.1);
-}
-
-/* Main Content */
-main {
-  margin: 2rem auto;
-  max-width: 700px;
-  color: #333;
-}
-
-/* Header */
-header {
-  background-color: #004aad;
-  color: white;
-  padding: 1.5rem 0;
-}
-
-/* Flexbox Navigation Menu */
-.navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem auto;
-}
-
-/* Individual Nav Items */
-.nav-item {
-  text-decoration: none;
-  color: #004aad;
-  border: 2px solid #004aad;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  background-color: white;
-}
-
-/* Hover and Active Effects */
-.nav-item:hover {
-  background-color: #004aad;
-  color: white;
-  transform: scale(1.05);
-}
-
-.nav-item.active {
-  background-color: #004aad;
-  color: white;
-}
-
-/* Main Content */
-main {
-  margin: 2rem auto;
-  max-width: 700px;
-  color: #333;
-}
