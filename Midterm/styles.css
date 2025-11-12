@@ -113,16 +113,35 @@ li {
   margin-bottom: 0.6em;
 }
 
+
+ul.image-list {
+  padding-left: 0;
+  margin: 1em 0;
+}
+
 ul.image-list li {
-  list-style-position: inside;
+  list-style: none;
   margin-bottom: 30px;
+}
+
+ul.image-list .li-text::before {
+  content: "•";
+  color: black;
+  font-weight: bold;      
+  display: inline-block;
+  width: 1em;
+  margin-right: 8px; 
+  vertical-align: top; 
 }
 
 ul.image-list .li-text {
   display: inline-block;
   max-width: 100%;
   vertical-align: top;
+  text-align: justify;
+  line-height: 1.6;
 }
+
 
 
 .hero {
