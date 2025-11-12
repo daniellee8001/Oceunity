@@ -127,15 +127,13 @@ ul.image-list li {
 }
 
 ul.image-list .li-text::before {
-  content: "TEST";
-  color: red;
-  font-size: 20px;
+  content: "";
   position: absolute;
   left: 0;
   top: 0.4em;
   width: 32px;
   height: 32px;
-  background-image: url('images/HydroSigil.webp');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
