@@ -276,6 +276,18 @@ ul.image-list .li-text::before {
   height: 40px;
 }
 
+.nav-animation img {
+  width: 40px; /* adjust to fit navbar */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.nav-animation img:hover {
+  transform: scale(1.2); /* enlarge slightly */
+  box-shadow: 0 0 15px 5px rgba(255, 255, 200, 0.8);
+}
+
 
 @keyframes slideIn {
   0% {
