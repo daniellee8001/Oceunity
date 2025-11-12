@@ -115,30 +115,27 @@ li {
 
 ul.custom-bullet {
   list-style: none; /* remove default bullets */
-  padding-left: 45px; /* space for bullet */
+  padding-left: 0; /* we'll handle spacing with li-text */
 }
 
 ul.custom-bullet li {
-  position: relative;
-  line-height: 1.6; /* match paragraph text */
+  line-height: 1.6;
   margin-bottom: 0.8em;
 }
 
 ul.custom-bullet li::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 0; /* start at top of li */
+  display: inline-block; /* makes it line up like a normal character */
   width: 24px;
   height: 24px;
+  margin-right: 15px; /* spacing between bullet and text */
+  vertical-align: top; /* aligns bullet to the top of the first line */
   background-image: url('images/HydroSigil.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  /* moves the bullet down slightly to align with first line of text */
-  transform: translateY(0.15em); 
 }
+
 
 
 ul.image-list {
