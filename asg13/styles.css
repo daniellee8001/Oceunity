@@ -15,10 +15,11 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #57b2c0 0%, #ffffff 100%); /* Personal color pallete used for domains assignment */
+  background-attachment: fixed;  
   margin: 0;
   padding: 0;
   font-family: 'Cormorant Garamond', sans-serif;
-  background: #ffffff;
 }
 
 .page-container {
