@@ -1,1 +1,69 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Aoboshi One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/aoboshi-one-v13-latin-regular.woff2') format('woff2');
+}
 
+@font-face {
+  font-display: swap; 
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: url('fonts/cormorant-garamond-v21-latin-500italic.woff2') format('woff2'); 
+}
+
+.job-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.job-card {
+  flex: 1 1 calc(33% - 2rem);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.job-card img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 1rem;
+  background: #e0e0e0; 
+}
+
+.job-card a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.job-card a:hover {
+  text-decoration: underline;
+}
+
+.job-card p {
+  flex-grow: 1;
+  color: #333;
+  line-height: 1.4;
+  min-height: 100px;
+}
+
+@media (max-width: 800px) {
+  .job-card {
+    flex: 1 1 100%;
+  }
+}
