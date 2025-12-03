@@ -22,14 +22,14 @@ body {
 }
 
 .page-container {
-  max-width: 900px; 
+  max-width: 100%; 
   margin: 0 auto;
   padding: 1rem;
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.6em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   color: #333;
   margin-bottom: 1.2em;
   text-align: left; 
@@ -56,7 +56,7 @@ h2 {
 }
 
 .intro-container {
-  max-width: 33%;
+  max-width: 600px;
   margin: 0 auto;
   padding: 1rem 0; 
 }
@@ -64,7 +64,7 @@ h2 {
 .intro-container p {
   font-size: 1em;
   line-height: 1.6em;
-  text-align: center; 
+  text-align: left; 
 }
 
 
@@ -113,8 +113,11 @@ h2 {
 .job-card p {
   flex-grow: 1;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.4em;
   min-height: 100px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 @media (max-width: 800px) {
