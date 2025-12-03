@@ -48,6 +48,19 @@ h2 {
   text-align: center;
 }
 
+.intro-container {
+  max-width: 33%;
+  margin: 0 auto;
+  padding: 1rem 0; 
+}
+
+.intro-container p {
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center; 
+}
+
+
 /* Job cards */
 .job-grid {
   display: flex;
