@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-animation">
+  
+</div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="epipelagic.html">Epipelagic Zone</a>
+      <a href="mesopelagic.html">Mesopelagic Zone</a>
+      <a href="bathypelagic.html">Bathypelagic Zone</a>
+      <a href="abyssopelagic.html">Abyssopelagic Zone</a>
+      <a href="hadalpelagic.html">Hadalpelagic Zone</a>
+      <a href="aboutus.html">About Us</a>
+    </div>
 
+    <div class="cta-buttons">
+      <button>Contact Us</button>
+      <button>Submit Info</button>
+    </div>
+  </nav>
+  
+  <div class="hero"></div>
+  
+  <main>
+
+  </main>
+  
+  <script>
+window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero');
+  const scrollY = window.scrollY;
+  const newHeight = Math.max(150, 400 - scrollY); // minimum height 150px
+  hero.style.height = newHeight + 'px';
+});
+</script>
+
+ <footer>
+  <p>HydroTraveler@gmail.com | 469-521-3259</p>
+</footer> 
+
+</body>
+</html>
