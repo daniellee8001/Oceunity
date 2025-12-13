@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Website</title>
+  <title>Oceanuity</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
       <a href="bathypelagic.html">Bathypelagic Zone</a>
       <a href="abyssopelagic.html">Abyssopelagic Zone</a>
       <a href="hadalpelagic.html">Hadalpelagic Zone</a>
-      <a href="aboutus.html">About Us</a>
+		<a href="aboutus.html">About Us</a>
     </div>
 
     <div class="cta-buttons">
@@ -30,9 +30,40 @@
   <div class="hero"></div>
   
   <main>
-
+    <h1>
+		Welcome to Oceanuity
+	</h1>
+	  <p>
+		  We strive to deliver all the life of marine biology to all who seek it!
+	  </p>
   </main>
-  
+
+	
+<div id="info-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <form class="modal-form">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Your full name">
+
+      <label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" required>
+
+      <label for="info">Brief Info About Addition/Suggestion</label>
+      <textarea id="info" name="info" placeholder="Your message..."></textarea>
+
+      <label for="business">Optional: Business Info</label>
+      <input type="text" id="business" name="business" placeholder="Business name or info">
+
+      <button type="button">Submit</button>
+    </form>
+  </div>
+</div>
+
+	
   <script>
 window.addEventListener('scroll', function() {
   const hero = document.querySelector('.hero');
@@ -45,6 +76,28 @@ window.addEventListener('scroll', function() {
  <footer>
   <p>Allseaing@gmail.com | 469-524-3245</p>
 </footer> 
+<script>
+  const requestBtn = document.querySelector('.cta-buttons button:nth-child(2)');
+  const modal = document.getElementById('info-modal');
+  const closeBtn = modal.querySelector('.close-button');
+
+  // Open modal
+  requestBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  // Close modal
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside the content
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
