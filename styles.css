@@ -128,6 +128,88 @@ footer {
   border-top: 1px solid #444;
 }
 
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 200; /* above nav */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+}
+
+.modal-content {
+  background: linear-gradient(to bottom, #61adc5, #408fa7, #1a738a);
+  color: white;
+  margin: 5% auto; /* center vertically, some space top/bottom */
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 800px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-form label {
+  font-family: 'Fuzzy Bubbles', sans-serif;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Amiri Quran', serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.modal-form textarea {
+  resize: vertical; /* allow height adjustment */
+  min-height: 80px;
+}
+
+.modal-form button {
+  background-color: #333; /* match nav bar */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Fuzzy Bubbles', sans-serif;
+}
+
+.modal-form button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 900px) {
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
 @media (max-width: 900px) {
   .cta-buttons {
     display: none;
