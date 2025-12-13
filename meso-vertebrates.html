@@ -30,12 +30,55 @@
   <div class="hero"></div>
   
   <main>
-    <h1>
-		Welcome to Oceanuity
-	</h1>
-	  <p>
-		  We strive to deliver all the life of marine biology to all who seek it!
-	  </p>
+    <h1>Animal Group Name</h1>
+
+  <div class="accordion-container">
+
+    <div class="accordion">
+      <button class="accordion-btn invertebrate-btn">Invertebrates</button>
+      <div class="accordion-content">
+        <div class="accordion-item">
+          <img src="" alt="Image 1">
+          <h3>Species Name</h3>
+          <p>test</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn vertebrate-btn">Vertebrates</button>
+      <div class="accordion-content">
+        <div class="accordion-item">
+          <img src="" alt="Image 1">
+          <h3>Species Name</h3>
+          <p>tes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn microorganism-btn">Microorganisms</button>
+      <div class="accordion-content">
+        <div class="accordion-item">
+          <img src="" alt="Image 1">
+          <h3>Species Name</h3>
+          <p>test</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+const accordions = document.querySelectorAll('.accordion-btn');
+accordions.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
   </main>
 
 	
