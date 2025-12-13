@@ -115,6 +115,12 @@ main {
   box-sizing: border-box;
 }
 
+main ul {
+  align-self: flex-start;
+  text-align: left;
+}
+
+
 h1, h2, h3 {
   font-family: 'Fuzzy Bubbles', sans-serif;
   text-align: left;
