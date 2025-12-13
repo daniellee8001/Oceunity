@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  background-image: url('images/OceanPic.webp');
+  background-image: url();
   background-repeat: repeat;
   background-size: contain;
   background-position: center top;
@@ -257,7 +257,7 @@ ul.image-list .li-text::before {
 .hero {
   margin-top: 0;
   height: 400px;
-  background-image: url('images/FontaineBackground.webp'); 
+  background-image: url('images/OceanPic.webp'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
