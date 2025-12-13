@@ -286,3 +286,32 @@ footer {
     min-width: 150px;
   }
 }
+
+.category-btn-vertical {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  padding: 40px 20px;
+  background: #1a738a;
+  color: white;
+  font-family: 'Fuzzy Bubbles', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.category-btn-vertical:hover {
+  background-color: #005167;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .category-btn-vertical {
+    padding: 30px 15px;
+    font-size: 1.3em;
+    width: 95%;
+  }
+}
