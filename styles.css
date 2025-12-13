@@ -287,9 +287,19 @@ footer {
   }
 }
 
+.category-buttons-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;     
+  align-items: center;   /* center horizontally */
+  margin-top: 40px;
+  width: 100%;  
+  box-sizing: border-box;
+}
+
 .category-btn-vertical {
   display: block;
-  width: 90%;
+  width: 90%;      
   max-width: 600px;
   padding: 40px 20px;
   background: #1a738a;
@@ -310,8 +320,8 @@ footer {
 
 @media (max-width: 768px) {
   .category-btn-vertical {
+    width: 95%;
     padding: 30px 15px;
     font-size: 1.3em;
-    width: 95%;
   }
 }
