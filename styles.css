@@ -402,10 +402,6 @@ footer {
   margin: 5px 0 0 0;
 }
 
-.invertebrate-btn { background-color: #1a738a; }
-.vertebrate-btn { background-color: #327a9d; }
-.microorganism-btn { background-color: #4ea6b8; }
+.animal-btn { background-color: #4ea6b8; }
 
-.invertebrate-btn:hover { background-color: #005167; }
-.vertebrate-btn:hover { background-color: #1d5f7a; }
-.microorganism-btn:hover { background-color: #2c7c8e; }
+.animal-btn:hover { background-color: #2c7c8e; }
