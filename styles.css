@@ -1,42 +1,42 @@
-/* amiri-quran-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Amiri Quran';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/amiri-quran-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/amiri-quran-v19-latin-regular.woff2') format('woff2');
 }
 
-/* fuzzy-bubbles-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Fuzzy Bubbles';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/fuzzy-bubbles-v9-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/fuzzy-bubbles-v9-latin-700.woff2') format('woff2');
 }
 
-/* General Page Styling */
 body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  background-image: url();
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center top;
-  background-attachment: fixed;
 }
 
-
-/* Navigation Bar */
 nav {
   background-color: #333;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-center {
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  padding: 10px 0;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -45,24 +45,21 @@ nav a {
   color: white;
   background-color: #555;
   padding: 10px 20px;
-  margin: 0 5px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
 nav a:hover {
   background-color: #777;
 }
 
-nav .cta-buttons {
-  position: absolute;
-  right: 20px; /* far right */
+.cta-buttons {
   display: flex;
   gap: 10px;
 }
 
-
-nav .cta-buttons button {
+.cta-buttons button {
   font-family: 'Fuzzy Bubbles', sans-serif;
   font-size: 0.9em;
   padding: 6px 12px;
@@ -74,11 +71,20 @@ nav .cta-buttons button {
   transition: background-color 0.3s;
 }
 
-nav .cta-buttons button:hover {
+.cta-buttons button:hover {
   background-color: #777;
 }
 
-/* Main Content */
+.hero {
+  height: 400px;
+  width: 100%;
+  background-image: url('images/OceanPic.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: height 0.2s ease;
+}
+
 main {
   max-width: 600px;
   margin: 50px auto;
@@ -88,214 +94,32 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: justify;
 }
 
-.responsive-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+h1, h2, h3 {
+  font-family: 'Fuzzy Bubbles', sans-serif;
+  text-align: left;
+}
+
+p, ul, li {
+  font-family: 'Amiri Quran', serif;
+  line-height: 1.6;
 }
 
 footer {
   background-color: #333;
   color: white;
   padding: 10px 20px;
-  text-align: left;
   font-family: 'Fuzzy Bubbles', sans-serif;
   width: 100%;
   box-sizing: border-box;
   border-top: 1px solid #444;
 }
-/* Header left-aligned */
-h1, h2, h3 {
-  font-family: 'Fuzzy Bubbles', sans-serif;
-  text-align: left;
-}
 
-/* Paragraph centered */
-p {
-  font-family: 'Amiri Quran', serif;
-  text-align: justify;
-  line-height: 1.6;
-  margin-bottom: 1.2em;
-}
-
-ul {
-  font-family: 'Amiri Quran', serif;
-  text-align: justify;
-  padding-left: 1.2em;
-  margin: 1em 0;
-  list-style-position: inside;
-  width: 100%;
-}
-
-li {
-  line-height: 1.6;
-  margin-bottom: 0.6em;
-}
-
-ul.custom-bullet {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul.custom-bullet li {
-  line-height: 1.6;
-  margin-bottom: 0.8em;
-}
-
-ul.custom-bullet li::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 15px;
-  vertical-align: top; 
-  background-image: url('images/HydroSigil.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-
-ul.image-list {
-  padding-left: 0;
-  margin: 1em 0;
-}
-
-ul.image-list li {
-  list-style: none;
-  margin-bottom: 30px;
-  position: relative;
-  padding-left: 0; /* reset */
-}
-
-
-ul.image-list .li-text {
-  position: relative;
-  display: block;
-  padding-left: 40px;
-  text-align: justify;
-  line-height: 1.6;
-  max-width: 100%;
-  vertical-align: top;
-}
-
-ul.image-list .li-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 32px;
-  height: 32px;
-  background-image: url('images/HydroSigil.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact-form label {
-  font-family: 'Fuzzy Bubbles', sans-serif;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-size: 1.1em;
-  color: #222;
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-family: 'Amiri Quran', serif;
-  font-size: 1em;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-sizing: border-box;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #3399ff; /* Hydro accent */
-  box-shadow: 0 0 5px rgba(51, 153, 255, 0.5);
-  outline: none;
-}
-
-.contact-form button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-family: 'Fuzzy Bubbles', sans-serif;
-  font-size: 1.1em;
-  color: white;
-  background-color: #3399ff; /* Hydro blue */
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #2277cc;
-}
-
-
-.hero {
-  margin-top: 0;
-  height: 400px;
-  background-image: url('images/OceanTop.avif'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: height 0.2s;
-}
-
-.nav-animation {
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  transform: translateY(-50%);
-  z-index: 10;
-  animation: slideIn 3s forwards; 
-}
-
-.nav-animation img {
-  width: 40px;   
-  height: 40px;
-}
-
-.nav-animation img {
-  width: 40px; /* adjust to fit navbar */
-  height: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.nav-animation img:hover {
-  transform: scale(1.2); /* enlarge slightly */
-  box-shadow: 0 0 15px 5px rgba(255, 255, 200, 0.8);
-}
-
-
-@keyframes slideIn {
-  0% {
-    left: -50px; 
-  }
-  100% {
-    left: 30px; 
+@media (max-width: 900px) {
+  .cta-buttons {
+    display: none;
   }
 }
