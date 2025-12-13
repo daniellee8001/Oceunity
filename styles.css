@@ -16,9 +16,15 @@
 
 body {
   scroll-behavior: smooth;
-  margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: linear-gradient(
+    to bottom,
+    #61adc5,
+    #408fa7,
+    #1a738a,
+    );
+  min-height: 100vh;
+  margin: 0;
 }
 
 nav {
