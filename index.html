@@ -1,3 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-animation">
+  <img src="images/FontaineEmblem.webp" alt="FontaineEmblem">
+</div>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Activities</a>
+    <a href="dining.html">Dining</a>
+    <a href="contact.html">Contact</a>
+    <a href="statement.html">Statement</a>
+    <div class="cta-buttons">
+    <button>Contact Us</button>
+    <button>Book Now</button>
+    <button>Request Info</button>
+  </div>
+  </nav>
+  
+  <div class="hero"></div>
+  
+  <main>
+
+  </main>
+  
+  <script>
+window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero');
+  const scrollY = window.scrollY;
+  const newHeight = Math.max(150, 400 - scrollY); // minimum height 150px
+  hero.style.height = newHeight + 'px';
+});
+</script>
+
+ <footer>
+  <p>HydroTraveler@gmail.com | 469-521-3259</p>
+</footer> 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,3 +71,4 @@
 	
 </body>
 </html>
+-->
